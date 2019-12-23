@@ -1,2 +1,6 @@
-# config-server-code
-SpringCloud Config Server Code
+# Config Server
+SpringCloud Config Server 配置中心
+
+Spring Cloud 配置中心为分布式系统中的服务器端和客户端提供外部化配置支持。通过Config Server，你可以在一个地方集中对所有环境中的应用程序的外部化配置进行管理。例如，当一个应用程序从开发环境切换到测试环境，然后再从测试环境切换到生产环境，你可以使用Config-Server统一管理这些环境之间的配置，并确保应用程序在迁移时能够拥有它运行所需要的一切配置。简而言之：Config-Server 就是用来实现配置统一管理和不同环境间配置的统一切换的。Config-Server 服务器的后端存储默认使用Git，因此它很容易支持配置环境的标签版本，同时可供多数的内容管理工具去访问。你也可以很容易地添加其他的替代实现，并将它们插入到Spring配置中。
+
+这里为Config Server端代码。
