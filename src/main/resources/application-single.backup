@@ -1,0 +1,60 @@
+# 项目相关配置
+config-server:
+  # 名称
+  name: Config Server配置中心-Single模式
+  # 版本
+  version: 1.0.0
+  # 作者
+  author: GeekTech
+  # 单位
+  unit: GeekTech
+
+spring:
+  # 应用配置
+  application:
+    # 应用名称
+    name: config-server
+  # 安全配置
+  security:
+    basic:
+      # 开启基于Http Basic的认证
+      enabled: true
+    user:
+      # 用户名
+      name: admin
+      # 密码
+      password: geektech
+
+  # Spring Cloud配置
+  cloud:
+    # 配置中心
+    config:
+      # Config Server配置
+      server:
+        # GitHub源配置
+        git:
+          # 仓库地址
+          uri: https://github.com/your github repository/{application}
+          # 分支
+          label: your branch name
+          # 用户名
+          username: your github username
+          # 密码
+          password: your github password
+
+# 注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:geektech@eureka-server:8761/eureka
+
+# 日志配置
+logging:
+  level:
+    com.geektech: warn
+    com.springframework: warn
+
+# 服务配置
+server:
+  # 端口
+  port: 8769

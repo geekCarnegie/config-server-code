@@ -1,0 +1,7 @@
+# 配置加密
+encrypt:
+  key-store:
+    location: classpath:/server.jks
+    password: spring-cloud-store-pass
+    alias: spring-cloud-key-store
+    secret: spring-cloud-key-pass
