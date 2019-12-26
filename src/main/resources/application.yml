@@ -34,13 +34,19 @@ spring:
         # GitHub源配置
         git:
           # 仓库地址
-          uri: https://github.com/your github repository/{application}
-          # 分支
-          label: your branch name
+          uri: https://github.com/geekCarnegie/{application}
           # 用户名
-          username: your github username
+          username: {your github username}
           # 密码
-          password: your github password
+          password: {your github password}
+          # 分支
+          default-label: master
+          # 本地目录（Mac）
+          # basedir: /Users/carnegielee/Desktop/volumes/config-server
+          # 本地目录（Linux）
+          basedir: /root/config-server
+          # 强制拉取
+          force-pull: true
 
 # 注册服务
 eureka:
